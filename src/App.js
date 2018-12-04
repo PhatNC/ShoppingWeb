@@ -5,18 +5,17 @@ import './App.css';
 import CarouselBanner from './components/CarouselBanner';
 import Header from './components/Header';
 import NavBarTop from './components/NavBarTop';
+import Content from './components/Content';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      
+      <div className="App">      
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">               
           <NavBarTop />
         </nav> 
       </div>
-
       {/* Header */}
       <div class="container-fluid">
         <div class="row">
@@ -30,7 +29,8 @@ class App extends Component {
           </div>
         </div>         
       </div>
-        <CarouselBanner />
+      <CarouselBanner />
+      <Content />
       </div>
     );
   }
