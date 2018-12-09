@@ -6,17 +6,17 @@ import CarouselBanner from './components/CarouselBanner';
 import Header from './components/Header';
 import NavBarTop from './components/NavBarTop';
 import Content from './components/Content';
-import FeaturedProduct from './components/FeaturedProducts';
+import ListProducts from './components/ListProducts';
 
 class App extends Component {
   render() {
     return (
       <div className="App">   
-      <NavBarTop />         
-      <Header />
-      <CarouselBanner />
-      <Content />
-      <FeaturedProduct />
+        <NavBarTop />         
+        <Header />
+        <CarouselBanner />
+        <Content />
+        <ListProducts />
       </div>
     );
   }
