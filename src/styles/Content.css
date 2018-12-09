@@ -1,0 +1,15 @@
+ img {
+    padding-top: 20px;
+}
+
+.img-resize {
+    max-width: 750px;
+    min-width: 750px;
+    margin: 10 auto;
+}
+.img-resize2 {
+    max-height: 468px;
+    min-height: 468px;
+    margin: 10 auto;
+}
+      

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
-import './NavBarTop.css';
+import { Nav, NavItem, Row, Col, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import '../styles/NavBarTop.css';
 
 export default class NavBarTop extends React.Component {
   constructor(props) {
@@ -20,12 +20,14 @@ export default class NavBarTop extends React.Component {
 
   render() {
     return (
+
       <div class="container-fluid">
-        <div class="col-xs-6 col-sm-3 col-md-6">
-            +8494 998 0848            
-        </div> 
-        <div class="col-xs-6 col-sm-9 col-md-6">
-            <Nav pills>          
+      <Row>
+        <Col md="6">
+        <p>+8494 998 0848</p>
+        </Col>
+        <Col md="6">
+        <Nav pills>          
                 <NavItem>
                 <NavLink href="#">Welcome to Sweet Cake World</NavLink>
                 </NavItem>
@@ -36,7 +38,8 @@ export default class NavBarTop extends React.Component {
                 <NavLink disabled href="#">Item</NavLink>
                 </NavItem>
             </Nav>
-            </div>       
+        </Col>
+      </Row>   
       </div>
     );
   }

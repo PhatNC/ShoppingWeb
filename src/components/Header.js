@@ -1,16 +1,7 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+import { Col,  Row,  Collapse,  Navbar,  NavbarToggler,  NavbarBrand,  Nav,  NavItem,  NavLink,  UncontrolledDropdown,
+  DropdownToggle,  DropdownMenu,  DropdownItem } from 'reactstrap';
+import '../styles/Header.css';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -28,7 +19,13 @@ export default class Header extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Row>
+        <Col md="6">
+          <div id="logo" class="col-md-6">
+           <img src="https://www.sweetcake.co/media/jollyany/logo/default/logo_1_1_1.png"></img>
+          </div>
+        </Col>
+        <Col md="6">
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Home</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -69,7 +66,8 @@ export default class Header extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+        </Col>
+      </Row>
     );
   }
 }
