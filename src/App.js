@@ -6,6 +6,7 @@ import CarouselBanner from './components/CarouselBanner';
 import Header from './components/Header';
 import NavBarTop from './components/NavBarTop';
 import Content from './components/Content';
+import FeaturedProduct from './components/FeaturedProducts';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
       </div>
       <CarouselBanner />
       <Content />
+      <FeaturedProduct />
       </div>
     );
   }
