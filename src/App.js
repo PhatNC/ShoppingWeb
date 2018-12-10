@@ -7,6 +7,7 @@ import Header from './components/Header';
 import NavBarTop from './components/NavBarTop';
 import Content from './components/Content';
 import ListProducts from './components/ListProducts';
+import BestSellingProducts from './components/BestSellingProducts'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <CarouselBanner />
         <Content />
         <ListProducts />
+        <BestSellingProducts/>
       </div>
     );
   }

@@ -1,6 +1,10 @@
-
-    .img-responsive {
-        max-width: 300px;
-        min-width: 300px;
-        padding: 20px;
-    }      
+.img-responsive {
+    max-width: 300px;
+    min-width: 300px;
+    padding: 20px;
+}      
+.card {
+    margin: 20 20 20 20;
+    border-width:5px;
+    border-style: none;
+}
