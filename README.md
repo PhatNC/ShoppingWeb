@@ -1,9 +1,13 @@
 CÀI ĐẶT Node + Reactstrap
 B1: Cài đặt Node.js: 
+
     https://blog.teamtreehouse.com/install-node-js-npm-windows
+
 B2: Cài đặt thư viện Reactstrap: 
+
     npm install --save reactstrap react react-dom (git bash)
 B3: clone project: 
+
     npm start
 -----------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
