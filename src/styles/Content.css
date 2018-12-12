@@ -3,13 +3,14 @@
 }
 
 .img-resize {
-    max-width: 750px;
-    min-width: 750px;
-    margin: 10 auto;
+    max-width: 720px;
+    min-width: 600px;
+    margin: 20 auto;
 }
 .img-resize2 {
     max-height: 468px;
     min-height: 468px;
+    width: 400px;
     margin: 10 auto;
 }
       
