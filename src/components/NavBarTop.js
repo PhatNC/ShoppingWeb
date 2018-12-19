@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, NavItem, Row, Col, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import '../styles/NavBarTop.css';
+import index from './Authentication';
+import SignIn from './Authentication';
 
 export default class NavBarTop extends React.Component {
   constructor(props) {
@@ -20,11 +22,9 @@ export default class NavBarTop extends React.Component {
 
   render() {
     return (
-
-      <div class="container-fluid">
       <Row>
         <Col md="6">
-        <p>+8494 998 0848</p>
+        {/* <p>+8494 998 0848     Fanpage      Email</p> */}
         </Col>
         <Col md="6">
         <Nav pills>          
@@ -32,7 +32,7 @@ export default class NavBarTop extends React.Component {
                 <NavLink href="#">Welcome to Sweet Cake World</NavLink>
                 </NavItem>
                 <NavItem>
-                <NavLink href="#">Login/Register</NavLink>
+                <NavLink href="/Authentication/SignIn"> Login/Register  </NavLink>                
                 </NavItem>
                 <NavItem>
                 <NavLink disabled href="#">Item</NavLink>
@@ -40,7 +40,6 @@ export default class NavBarTop extends React.Component {
             </Nav>
         </Col>
       </Row>   
-      </div>
     );
   }
 }

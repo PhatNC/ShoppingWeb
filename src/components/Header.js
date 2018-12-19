@@ -20,48 +20,48 @@ export default class Header extends React.Component {
   render() {
     return (
       <Row>
-        <Col md="6">
+        <Col sm="12" md="6">
           <div id="logo" class="col-md-6">
            <img src="https://www.sweetcake.co/media/jollyany/logo/default/logo_1_1_1.png"></img>
           </div>
         </Col>
-        <Col md="6">
+        <Col sm="12" md="6" >
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Home</NavbarBrand>
+          <NavbarBrand href="/">HOME</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">About Us</NavLink>
+                <NavLink href="/components/">ABOUT US</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Cake
+                  CAKE
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Anniversary Cake
+                    ANNIVERSARE CAKE
                   </DropdownItem>
                   <DropdownItem>
-                    Fondant Cake
+                    FONDANT CAKE
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Barbie Doll Cake
+                    BARIBIE DOLL CAKE
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="#">Combo Offers</NavLink>
+                <NavLink href="#">COMBO OFFERS</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Flowers</NavLink>
+                <NavLink href="#">FLOWERS</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Gifts</NavLink>
+                <NavLink href="#">GIFTS</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Contact Us</NavLink>
+                <NavLink href="#">CONTACT US</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
